@@ -402,10 +402,10 @@ a:focus {
     position: absolute;
     content: "";
     width: 100px;
-    height: 2px;
+    height: 4px;
     left: calc(50% - 50px);
     bottom: 0;
-    background: #030f27;
+    background: #60cc60;
 }
 
 .page-header a {
@@ -421,13 +421,13 @@ a:focus {
 
 .page-header a::after {
     position: absolute;
-    content: "/";
+    content: "→";
     width: 8px;
     height: 8px;
     top: -2px;
-    right: -7px;
+    right: -1px;
     text-align: center;
-    color: #121518;
+    color: #60cc60;
 }
 
 .page-header a:last-child::after {
@@ -942,6 +942,7 @@ a:focus {
 
 .team .team-img {
     position: relative;
+    text-align: center;
 }
 
 .team .team-img img {
@@ -2232,5 +2233,21 @@ a:focus {
     .footer .copyright .col-md-6:last-child p {
         margin: 5px 0;
         text-align: center;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 345px) {
+    .fact .fact-text h2{
+        font-size: 14px;
+    }
+    .fact .fact-text p{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 299px) {
+    .fact .fact-text h2{
+        font-size: 12px;
+    }
+    .fact .fact-text p{
+        font-size: 8px;
     }
 }
